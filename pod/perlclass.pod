@@ -28,11 +28,11 @@ provider native keywords supporting object oriented programming paradigm.
 
 =head2 History
 
-Since Perl 5, support for objects resolved around the concept of
-I<blessing> references with a package name. Such reference could then be used
-to call subroutines from the package it was blessed with (or any of its
-parents). This system, while bare-bones, was flexible enough to allow creation
-of multiple more advanced, community-driven systems for object orientation.
+Since Perl 5, support for objects resolved around the concept of I<blessing>
+references with a package name. Such reference could then be used to call
+subroutines from the package it was blessed with (or any of its parents). This
+system, while bare-bones, was flexible enough to allow creation of multiple
+more advanced, community-driven systems for object orientation.
 
 Class feature is a core implementation of class syntax which is familiar to
 what one would find in other programming languages. It isn't a C<bless>
@@ -98,8 +98,8 @@ access different values in the same scope.
 
 Methods are subroutines intended to be called in the context of class objects.
 
-A variable named C<$self> populated with the current object instance will automatically be
-created in the lexical scope of C<method>.
+A variable named C<$self> populated with the current object instance will
+automatically be created in the lexical scope of C<method>.
 
 Methods always act as if C<use feature 'signatures'> is in effect, but C<$self>
 will not appear in the arguments list as far as the signature is concerned.
@@ -207,4 +207,3 @@ Paul Evans
 Bartosz Jarzyna
 
 =cut
-
