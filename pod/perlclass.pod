@@ -49,6 +49,10 @@ the scope of current package:
 
     class NAME VERSION BLOCK
 
+    class NAME;
+
+    class NAME VERSION;
+
 The C<class> keyword declares a new package which is intended to be a class.
 All other keywords from the C<class> feature should be used in scope of this
 declaration.
@@ -56,6 +60,11 @@ declaration.
     class WithVersion 1.000 {
         # class definition goes here
     }
+
+Classes can be declared in either block or statement syntax. If a block is
+used, the body of the block contains the implementation of the class. If the
+statement form is used, the remainder of the file is used up until the next
+C<class> or C<package> statement.
 
 C<class> and C<package> declarations are similar, but classes automatically get
 a constructor named C<new> - You don't have to (and should not) write one.
